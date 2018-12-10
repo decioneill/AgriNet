@@ -1292,17 +1292,18 @@
 									"model": {
 										"$ref": "AAAAAAFnZO5LQa2gpHU="
 									},
-									"visible": false,
 									"font": "Arial;13;0",
-									"left": 657,
+									"left": 654,
 									"top": 388,
+									"width": 7.22998046875,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
 										"$ref": "AAAAAAFnZO5LQa2jrvo="
 									},
-									"edgePosition": 2
+									"edgePosition": 2,
+									"text": "1"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1354,16 +1355,17 @@
 									"model": {
 										"$ref": "AAAAAAFnZO5LQa2hU/0="
 									},
-									"visible": false,
 									"font": "Arial;13;0",
-									"left": 757,
+									"left": 755,
 									"top": 319,
+									"width": 5.05908203125,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
 										"$ref": "AAAAAAFnZO5LQa2jrvo="
-									}
+									},
+									"text": "*"
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
@@ -1446,7 +1448,7 @@
 							},
 							"font": "Arial;13;0",
 							"left": 272,
-							"top": 432,
+							"top": 368,
 							"width": 108,
 							"height": 65,
 							"text": "Each new member recieves 20 Florins"
@@ -1465,7 +1467,7 @@
 								"$ref": "AAAAAAFnZNhrBqmnZHM="
 							},
 							"lineStyle": 1,
-							"points": "439:463;380:464"
+							"points": "439:434;380:416"
 						},
 						{
 							"_type": "UMLClassView",
@@ -2357,6 +2359,35 @@
 							},
 							"lineStyle": 1,
 							"points": "944:251;999:252"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFnmHe2evZthpo=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 272,
+							"top": 464,
+							"width": 100,
+							"height": 103,
+							"text": "Each member must have 1 piece of equipment that is availible or reserved"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFnmHe2uvaC0/E=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFnmHe2evZthpo="
+							},
+							"tail": {
+								"$ref": "AAAAAAFnZNhrBqmnZHM="
+							},
+							"lineStyle": 1,
+							"points": "439:486;372:503"
 						}
 					]
 				},
@@ -2374,7 +2405,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZNb+MqkW2Cw="
 							},
-							"name": "name"
+							"name": "name",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2382,7 +2414,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZNb+MqkW2Cw="
 							},
-							"name": "postCode"
+							"name": "postCode",
+							"type": ""
 						}
 					],
 					"isAbstract": true
@@ -2489,7 +2522,8 @@
 								"reference": {
 									"$ref": "AAAAAAFnZNhrBaml8Ko="
 								},
-								"navigable": false
+								"navigable": false,
+								"multiplicity": "1"
 							},
 							"end2": {
 								"_type": "UMLAssociationEnd",
@@ -2500,7 +2534,8 @@
 								"name": "Creates a",
 								"reference": {
 									"$ref": "AAAAAAFnZOAbBaptvkc="
-								}
+								},
+								"multiplicity": "*"
 							}
 						},
 						{
@@ -2537,7 +2572,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZNhrBaml8Ko="
 							},
-							"name": "name"
+							"name": "name",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2545,7 +2581,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZNhrBaml8Ko="
 							},
-							"name": "postCode"
+							"name": "postCode",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2553,7 +2590,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZNhrBaml8Ko="
 							},
-							"name": "email"
+							"name": "email",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2561,7 +2599,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZNhrBaml8Ko="
 							},
-							"name": "balance"
+							"name": "balance",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -2654,7 +2693,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZNqV6qoGSdw="
 							},
-							"name": "name"
+							"name": "name",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2662,7 +2702,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZNqV6qoGSdw="
 							},
-							"name": "description"
+							"name": "description",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2670,7 +2711,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZNqV6qoGSdw="
 							},
-							"name": "picture"
+							"name": "picture",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2678,7 +2720,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZNqV6qoGSdw="
 							},
-							"name": "florinValue"
+							"name": "florinValue",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2686,7 +2729,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZNqV6qoGSdw="
 							},
-							"name": "datesAvailable"
+							"name": "datesAvailable",
+							"type": ""
 						}
 					]
 				},
@@ -2736,7 +2780,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZOAbBaptvkc="
 							},
-							"name": "amount"
+							"name": "amount",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2744,7 +2789,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZOAbBaptvkc="
 							},
-							"name": "date"
+							"name": "date",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2752,7 +2798,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZOAbBaptvkc="
 							},
-							"name": "lender"
+							"name": "lender",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2760,7 +2807,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFnZOAbBaptvkc="
 							},
-							"name": "borrower"
+							"name": "borrower",
+							"type": ""
 						}
 					]
 				},
